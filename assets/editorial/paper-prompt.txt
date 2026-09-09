@@ -1,0 +1,5 @@
+Use case: photorealistic-natural
+Asset type: seamless repeating drawing-paper background texture for Interlude UI, intended to repeat at 420x420 CSS pixels.
+Primary request: Generate exactly one square 1024x1024 raster texture of clean warm-white fine drawing paper. The entire image is only blank paper surface, filling edge to edge. Match the barely visible delicate fine-grained paper background of an elegant pencil illustration UI. Base color near #faf9f6. Tiny fibers and very soft natural grain, extremely low contrast; uniform diffuse lighting and uniform color throughout. Seamless tile with matching opposite edges, no visible repeat boundaries.
+Composition: perfectly flat straight-on scan; no scene or objects.
+Avoid: text, letters, symbols, birds, drawings, objects, paper edges, borders, shadows, vignette, gradients, stains, creases, folds, wrinkles, coarse roughness, dark flecks, watermarks, UI controls. Create a texture asset only, not a UI image.

@@ -1,0 +1,15 @@
+node_modules/
+dist/
+dist-test/
+out/
+release/
+.local/
+.playwright-cli/
+.DS_Store
+*.log
+.env
+.env.*
+!.env.example
+assets/legal/
+reports/current/
+reports/dependency-licenses.json

@@ -1,0 +1,14 @@
+:root{
+ color-scheme:light;--canvas:#faf9f5;--surface:#ffffff;--ink:#30302e;--muted:#74736c;--line:#d6d5ce;--button-bg:#b65b3e;--button-fg:#ffffff;--focus:#a65035;
+ --pane-tint:#faf9f5;--pane-edge:#e4e2db;--pane-shadow:0 8px 24px #26262414;--pane-filter:none;--dialog-tint:#faf9f5;--pane-ink:#30302e;--pane-muted:#74736c;--control-frost:#ffffff80;--control-edge:#d6d5ce;--control-shine:none;--switch-off:#d6d5ce;--switch-knob:#ffffff;--usage-track:#e9e7df;--pane-rule:#e5e3db;--glass:#faf9f5;--glass-edge:#e4e2db;--track:#e9e7df;--progress:#c67355;
+ --font-ui:-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC',sans-serif;--font-display:var(--font-ui);
+ --text-xs:12px;--text-sm:14px;--text-md:16px;--text-lg:24px;--text-timer:48px;
+ --space-1:4px;--space-2:8px;--space-3:12px;--space-4:16px;--space-6:24px;--space-8:32px;
+ --radius-control:8px;--radius-panel:16px;
+ --duration-fast:160ms;--duration-page:200ms;--duration-drift-x:4000ms;--duration-drift-y:3100ms;--duration-grass:8000ms;--duration-standard:320ms;--duration-tick:1000ms;--duration-ambient:12000ms;
+ --ease-standard:cubic-bezier(.22,.75,.25,1);
+ --shadow-panel:0 8px 24px #26262414;
+}
+[data-theme=dark]{color-scheme:dark;--canvas:#292927;--surface:#353532;--ink:#eeeeea;--muted:#b0afa7;--line:#55554f;--button-bg:#d88e70;--button-fg:#262623;--focus:#e5a388;--pane-tint:#292927;--pane-edge:#454540;--pane-shadow:0 8px 24px #00000026;--pane-filter:none;--dialog-tint:#30302d;--pane-ink:#eeeeea;--pane-muted:#b0afa7;--control-frost:#353532;--control-edge:#55554f;--control-shine:none;--switch-off:#55554f;--switch-knob:#eeeeea;--usage-track:#45453f;--pane-rule:#43433d;--glass:#292927;--glass-edge:#454540;--track:#45453f;--progress:#d88e70;--shadow-panel:0 8px 24px #00000026}
+html{background:var(--canvas);color:var(--ink);font-family:var(--font-ui)}body{margin:0;font-size:var(--text-sm);line-height:1.6}*{box-sizing:border-box}button,input{font:inherit}button{cursor:pointer}button:disabled{cursor:default;opacity:.6}:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
