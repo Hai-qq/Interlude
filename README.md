@@ -1,11 +1,11 @@
-<p align="center"><img src="assets/icon.png" width="112" height="112" alt="间歇的绿色飞鸟应用图标"></p>
+<p align="center"><img src="docs/assets/brand/mark.svg" width="144" height="144" alt="胖雀与陶土翅膀"></p>
 
 <h1 align="center">间歇 · Interlude</h1>
 <p align="center">一只胖雀，提醒你离开屏幕片刻。</p>
 <p align="center">
   <a href="https://github.com/Hai-qq/Interlude/actions/workflows/ci.yml"><img src="https://github.com/Hai-qq/Interlude/actions/workflows/ci.yml/badge.svg" alt="构建与测试"></a>
-  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-55634B" alt="MIT License"></a>
-  <img src="https://img.shields.io/badge/platform-macOS-55634B" alt="主要支持 macOS">
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-706358" alt="MIT License"></a>
+  <img src="https://img.shields.io/badge/platform-macOS-706358" alt="主要支持 macOS">
 </p>
 <p align="center"><a href="#本机运行">开始使用</a> · <a href="CONTRIBUTING.md">参与开发</a> · <a href="https://github.com/Hai-qq/Interlude/issues/new/choose">反馈问题</a></p>
 
