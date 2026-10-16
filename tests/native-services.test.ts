@@ -1,9 +1,12 @@
-import {it,expect,vi,afterEach} from 'vitest';import {EventEmitter} from 'node:events';
+import {it,expect,vi,beforeEach,afterEach} from 'vitest';import {EventEmitter} from 'node:events';
 const mocks=vi.hoisted(()=>({spawn:vi.fn()}));vi.mock('node:child_process',()=>({spawn:mocks.spawn}));
 import {DesktopEnvironment} from '../src/main/environment';
 const child=()=>Object.assign(new EventEmitter(),{stdout:new EventEmitter(),stderr:{resume:vi.fn()},kill:vi.fn()});
 const signals={screenAwake:true,mediaActive:false,appSwitch:false,captureActive:false,fullscreenQuiet:false,reducedMotion:false};
-afterEach(()=>{vi.useRealTimers();mocks.spawn.mockReset()});
+// 原生助手只在 macOS 上启动；spawn 已替换为假进程，这里测的是输出解析和重启逻辑，在 Windows CI 上也按 darwin 跑。
+const platform=Object.getOwnPropertyDescriptor(process,'platform')!;
+beforeEach(()=>{Object.defineProperty(process,'platform',{...platform,value:'darwin'})});
+afterEach(()=>{vi.useRealTimers();mocks.spawn.mockReset();Object.defineProperty(process,'platform',platform)});
 it('native signal streams handle split lines and reject non-booleans and unrelated data',()=>{
  const c=child(),changed=vi.fn();mocks.spawn.mockReturnValue(c);const env=new DesktopEnvironment(changed);env.start();
  c.stdout.emit('data','{"screenAwake":');c.stdout.emit('data','"yes"}\nnot json\n');expect(changed).not.toHaveBeenCalled();
