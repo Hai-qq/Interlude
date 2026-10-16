@@ -12,9 +12,9 @@ Electron 使用 MIT。构建时从锁定的 Electron 依赖复制 Chromium / Nod
 | debug | 2.6.9 | MIT | 运行时 |
 | electron-squirrel-startup | 1.0.1 | Apache-2.0 | 运行时 |
 | ms | 2.0.0 | MIT | 运行时 |
-| react | 19.2.8 | MIT | 运行时 |
-| react-dom | 19.2.8 | MIT | 运行时 |
-| scheduler | 0.27.0 | MIT | 运行时 |
-| zod | 4.5.4 | MIT | 运行时 |
+| react | 19.3.0 | MIT | 运行时 |
+| react-dom | 19.3.0 | MIT | 运行时 |
+| scheduler | 0.28.0 | MIT | 运行时 |
+| zod | 4.6.7 | MIT | 运行时 |
 
 运行 `npm run licenses` 可重建许可清单。
