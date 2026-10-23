@@ -67,7 +67,7 @@ npm run build
 npm run test:e2e
 ```
 
-原生检查默认运行开发构建，使用独立数据和活动信号夹具，输出至 `reports/current/`。基本流程可加 `INTERLUDE_QA_SMOKE=1`；完整检查包含真实一分钟休息。检查打包产物时设置 `INTERLUDE_QA_EXECUTABLE` 为其可执行文件的绝对路径。
+原生检查默认运行开发构建，使用独立数据和活动信号夹具，输出至 `reports/current/`。基本流程可加 `INTERLUDE_QA_SMOKE=1`；完整检查包含真实一分钟休息。检查打包产物时设置 `INTERLUDE_QA_EXECUTABLE` 为其可执行文件的绝对路径。检查期间窗口设为不可聚焦并置顶，运行时可以照常使用电脑，切换应用不会让小窗失焦收起；失焦收起本身不在检查范围内。
 
 需要安装包时运行 `npm run make`，产物输出至 `out/v<版本号>/`。macOS 未配置 Developer ID 时使用本机 ad-hoc 签名，不包含公证。GitHub Actions 在推送与 PR 时自动执行类型检查、单元测试和 macOS 构建；安装包工作流仍只允许手动触发，不会自动发布 Release。CI 不运行原生活动检测或完整交互验收。
 
